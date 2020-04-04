@@ -34,14 +34,17 @@ Avenues within Legal NLP:
 - Intellectual Property- Tools of artificial intelligence helps in providing the insights into the IP portfolios i.e. search and registration of a trademark, Patent, Copyrights etc.
 - Electronic Billing- Artificial intelligence legal software also helps the lawyer and Firms in preparing the invoices as per the work done by them. It makes for accurate billing for the work done by a lawyer. Thus, helps both lawyers and clients.
 
+Search words: Legal AI (ML, NLP), LagalTech Law Informatics, 
+
 People working in Legal NLP:
 - 
 
 Github Open-source projects:
--
+- IIT Kgp Law AI https://github.com/Law-AI/summarization
+- LexPredict https://github.com/LexPredict/lexpredict-lexnlp
 
-Online courses:
--
+Courses:
+- Stanford Codex "Computational Law" https://law.stanford.edu/courses/computational-law/
 
 Books, Videos, channels for self study:
 -
