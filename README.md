@@ -47,10 +47,12 @@ Courses:
 - Stanford Codex "Computational Law" https://law.stanford.edu/courses/computational-law/
 
 Books, Videos, channels for self study:
--
+- The Law Lab Channel https://www.thelawlabchannel.com/
+- ArtificialLawyer.com
 
 Experts (Local/international):
-
+- Ilias Chalkidis https://iliaschalkidis.github.io/ Extracting Contract Elements
+- Daniel Martin Katz Codex Computational Law
 
 Indian legal tech startups : 
 - SpotDraft, 
