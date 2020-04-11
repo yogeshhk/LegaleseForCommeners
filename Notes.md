@@ -48,4 +48,12 @@ Stephen Wolfram : Computational Law, Symbolic Discourse and the AI Constitution
 - Knowledge-based Wolfram Language: formal, computable, symbolic
 - To encode to be able to capture the full range of human activities and human legal specifications.
 - A symbolic discourse language is about representing things in the world. Natural language is just one way to try to describe those things, at least to some approximation 
-- Contracts into Code: 1. translate natural language to symbolic language. 2. 
+- Contracts into Code:  translate natural language to symbolic language.
+
+
+## Watch later
+- https://www.slideshare.net/Danielkatz/artificial-intelligence-and-law-a-primer
+- https://www.slideshare.net/Danielkatz/legal-analytics-machine-learning-and-some-comments-on-the-status-of-innovation-in-the-legal-industry-professors-daniel-martin-katz-michael-j-bommarito-ii-presentation-the-forum-on-legal-evolution-nyc-022614?ref=
+- https://www.slideshare.net/Danielkatz/law-tech-design-delivery-observations-regarding-innovation-in-the-legal-industry-professor-daniel-martin-katz?ref=
+- https://www.slideshare.net/Danielkatz/the-three-forms-of-legal-prediction-experts-crowds-and-algorithms-professors-daniel-martin-katz-michael-j-bommarito-msu-college-of-law?ref=
+
