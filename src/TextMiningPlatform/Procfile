@@ -1,0 +1,1 @@
+web: gunicorn flask_myideapool_app:app --log-file=-
