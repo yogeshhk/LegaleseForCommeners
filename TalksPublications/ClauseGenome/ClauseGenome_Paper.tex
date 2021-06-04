@@ -32,29 +32,29 @@
 % %      Name (First, Middle initial, Last)                  
 % %      Your ORCID number replace the "000-0000-1234-5678" part.    
 % % ############################################
-% \authorSection{
-	% \anAuthor{First M. Last}{000-0000-1234-5678}{1},
-	% \anAuthor{First M. Last}{000-0000-1234-5678}{2}, 
-	% \anAuthor{First M. Last}{000-0000-1234-5678}{3} 
-% }
+ \authorSection{
+	\anAuthor{Yogesh Kulkarni}{0000-0001-5431-5727}{},
+% \anAuthor{First M. Last}{000-0000-1234-5678}{2}, 
+%	\anAuthor{First M. Last}{000-0000-1234-5678}{3} 
+ }
 
 
 % % ######################################
 % % Here we need your affiliation and contact e-mail. Please edit   
 % % affiliation as well as the e-mail fields.                                  
 % % ######################################
-% \affiliationSection{
-	% \anAffiliation{1}{University of London}{author@uofl.ac.uk}
+\affiliationSection{
+	\anAffiliation{}{Principal Architect, Icertis Solutions Pvt. Ltd.}{yogesh.kulkarni@icertis.com}
 	% \anAffiliation{2}{University of Paris}{author2@uofp.fr}
 	% \anAffiliation{3}{Google, Inc.}{author3@google.com}
-% }
+}
 
 
 % % ######################################
 % % Please decide on who the corresponding author is going to be 
 % % and complete the section below                                            
 % % ######################################
-% \correspondingAuthor{First M. Last}{author1@uofl.ac.uk}
+%\correspondingAuthor{Yogesh Kulkarni}{yogesh.kulkarni@icertis.com}
 
 
 % ########################################
@@ -83,6 +83,8 @@ Text needs to be converted to numbers in order to be used for Machine Learning a
 % ################################
 
 \section{INTRODUCTION}
+
+Contracts are legal documents describing agreements between two or more parties. They have been in practice for ages, evolving in aspects of medium, language and enforcement approaches. Analysis of contracts has become critical for Law firms, companies, governments to assess contents for finding similar documents, extracting important information, etc. Although rule-based approaches have been predominant in this aspect, use of Artificial Intelligence (AI) in form of Machine Learning and Natural Language processing are getting their way into mainstream legal informatics.
 
 Machine Learning approaches need inputs to be in numeric form. For Natural Language Processing (NLP), it becomes imperative 
 to convert input (and output, in come cases) to numeric form, such as vectors. Multiple approaches to map words or sentences or document to vectors are available. Some popular ones such as `Bag of Words (BoW)', `Term-Frequency Inverse Document Frequency (Tf-idf)' are typically word frequency based, whereas Word Embeddings such as `Document to Vectors (Doc2Vec)', Glove, `Bidirectional Encoder Representations from Transformers (BERT)' are co-occurrence or contextual in nature. Domain specific embeddings tend to capture some form of semantics due to co-occurrences, ie vectors associated words are closes in embeddings space \cite{Doc2VecSurvey}.
@@ -120,7 +122,7 @@ Once documents are converted to list of clause category labels, its a string of 
 
 \section{RELATED WORK}
 \label{sec:litsurvey}
-TBD
+Various schemes are available to convert text to vectors for Machine Learning related applications in the domain of Natural Language Processing. Embeddings come in different forms such as Word  (Word2Vec \cite{mikolov2013distributed}), Sentence (Sent2Vec), Paragraph and Documents (doc2vec). In legal domain, \cite{Chalkidis2017} obtained (pre-trained) word embedding by applying word2vec to an additional unlabeled dataset of about 750,000 contracts.
 
 \section{PROPOSED APPROACH}
 \label{sec:proposal}
@@ -170,7 +172,7 @@ MSA_1 =  ``c61 c53 c3 c40 c23 c7 c8 c40 c8 c1 c40 c40 c1 c20 c24 c24 c47 c24 c24
 MSA_2 =  ``c61 c61 c48 c48 c8 c34 c40 c40 c8 c24 c47 c1  c49 c14 c29 c2 c30 c24 c30 c9 c53''
 \end{lstlisting}
 
-Note that both seem to have started with similar clause category, "c61", and thats obviously "preamble". Pictorary they would look as in Fig. \ref{fig:docclausegenome}:
+Note that both seem to have started with similar clause category, "c61", and thats obviously "preamble". Pictorially they would look as in Fig. \ref{fig:docclausegenome}:
 
  \begin{figure}[h!]
  \begin{center}
@@ -184,8 +186,7 @@ Note that both seem to have started with similar clause category, "c61", and tha
 \subsection{Vectorization}
 \label{subsec:vecrtorization}
 
-Instead of the originam text, now treat documents are just the genome strings. Use this new content
-to vecotrize them,  tfidf  in the following case as shown in Fig. ref{genomevectors}.
+Instead of the original text, now treat documents are just the genome strings. Use this new content to vectorise them,  tfidf  in the following case as shown in Fig. ref{genomevectors}.
 
  \begin{figure}[h!]
  \begin{center}
@@ -213,14 +214,14 @@ Results for checking the efficacy of the `Clause Genome' based approach for Clus
 
  \begin{figure}[h!]
  \begin{center}
-  \includegraphics[width=\textwidth]{img/genomeclustering.png}
+  \includegraphics[width=0.6\textwidth]{img/genomeclustering.png}
   \caption{Vector representation of document clause genomes}
   \label{fig:genomeclustering}
  \end{center}
  \end{figure}
  
 
-Barring one misclassification, documents have got correctely segregated into their own type
+Barring one misclassification, documents have got correctly segregated into their own type
 clusters.
 
 % \begin{figure}
@@ -266,7 +267,7 @@ clusters.
 % Avg. time (seconds)& 0.09 & 13.27 & 6.99\\
 % Run-time ratio & & 147.44 & 77.67 
 % \end{tabular}
-% \caption{Timings for initial blade optimisation iteration done with original and differentiated (AD) sources}
+% \caption{Timings for initial blade optimization iteration done with original and differentiated (AD) sources}
 % \label{tab:computationaltimedifference}
 % \end{table}
 
@@ -295,16 +296,16 @@ clusters.
 
 \section{CONCLUSIONS}
 
-TBD
+This paper proposed intermediate level abstraction for representing contract documents, based on clause categories. This approach has following advantages and disadvantages.
 
  \begin{itemize}
  \item Advantages:
   \begin{itemize}
 \item Leverages Contract domain specific higher level abstractions, making it more domain-semantic.
-\item Clause genome has lowr space requirements and computationaly efficient for firther downstream applications.
+\item Clause genome has lowr space requirements and computationally efficient for further downstream applications.
 \item Noise based on individual word frequency is smoothened
 \item Order of the clauses is maintained ie document structure is retained
-\item Explanability is better for debugging as well as customer trust
+\item Explainability is better for debugging as well as customer trust
 \end{itemize}
 \item Disadvantages:
  \begin{itemize}
@@ -313,6 +314,8 @@ TBD
 \item Loss of word-level information including linguistic structures.
 \end{itemize}
 \end{itemize}
+
+For future work, multiple word-embedding schemes can be evaluated at, both, clause classification level as well as post-genome vectorization level. Similarly multiple algorithms can be evaluated at, both, clause classification level as well as during usage of the clause-genome based vectors. Best combination can then decided for particular corpus.
 %
 %\section*{ACKNOWLEDGEMENTS}
 %This research is a part of the \ldots
